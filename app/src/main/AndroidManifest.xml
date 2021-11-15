@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Tasku">
         <activity
+            android:name=".LoginAct"
+            android:exported="false" />
+        <activity
             android:name=".SplashScreenAct"
             android:exported="true">
             <intent-filter>
