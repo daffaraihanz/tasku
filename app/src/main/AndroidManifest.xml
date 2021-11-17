@@ -10,6 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Tasku">
         <activity
+            android:name=".BottomNavigationView"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterSuccessAct"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterAct"
+            android:exported="false" />
+        <activity
+            android:name=".HomeAct"
+            android:exported="false" />
+        <activity
+            android:name=".LoginAct"
+            android:exported="false" />
+        <activity
             android:name=".SplashScreenAct"
             android:exported="true">
             <intent-filter>

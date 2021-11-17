@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Tasku</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_task">Task</string>
+    <string name="menu_daily">Daily</string>
 </resources>
