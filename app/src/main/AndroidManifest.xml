@@ -10,13 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Tasku">
         <activity
-            android:name=".BottomNavigationView"
-            android:exported="false" />
-        <activity
             android:name=".RegisterSuccessAct"
             android:exported="false" />
         <activity
             android:name=".RegisterAct"
+            android:exported="false"/>
+        <activity
+            android:name=".InProgressAct"
+            android:exported="false" />
+        <activity
+            android:name=".TaskAct"
             android:exported="false" />
         <activity
             android:name=".HomeAct"
