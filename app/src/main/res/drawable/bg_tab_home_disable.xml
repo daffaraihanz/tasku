@@ -6,7 +6,7 @@
         />
 
     <solid
-        android:color="@color/myprimarycolor"
+        android:color="#E5E5E5"
         />
 
     <corners

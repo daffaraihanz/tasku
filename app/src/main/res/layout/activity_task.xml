@@ -22,16 +22,27 @@
             android:layout_height="match_parent"
             >
 
+            <ImageView
+                android:id="@+id/btn_back"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/btn_back"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
             <TextView
                 android:id="@+id/textView5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="50dp"
-                android:text="Task"
-                android:textSize="25sp"
-                android:textColor="@color/black"
+                android:layout_marginTop="35dp"
                 android:fontFamily="@font/mbold"
+                android:text="Task"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -59,7 +70,7 @@
                     android:paddingBottom="8dp"
                     android:text="TO DO"
                     android:textAlignment="center"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     android:textSize="12sp" />
 
                 <TextView
@@ -70,13 +81,13 @@
                     android:layout_marginLeft="8dp"
                     android:layout_marginRight="8dp"
                     android:layout_weight="1"
-                    android:background="@drawable/bg_tab_home"
+                    android:background="@drawable/bg_tab_home_disable"
                     android:fontFamily="@font/mbold"
                     android:paddingTop="8dp"
                     android:paddingBottom="8dp"
                     android:text="IN PROGRESS"
                     android:textAlignment="center"
-                    android:textColor="@color/black"
+                    android:textColor="#ACACAC"
                     android:textSize="12sp" />
 
                 <TextView
@@ -84,13 +95,13 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_weight="1"
-                    android:background="@drawable/bg_tab_home"
+                    android:background="@drawable/bg_tab_home_disable"
                     android:fontFamily="@font/mbold"
                     android:paddingTop="8dp"
                     android:paddingBottom="8dp"
                     android:text="DONE"
                     android:textAlignment="center"
-                    android:textColor="@color/black"
+                    android:textColor="#ACACAC"
                     android:textSize="12sp" />
 
             </LinearLayout>
@@ -145,7 +156,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:fontFamily="@font/msemibold"
+                android:fontFamily="@font/mmedium"
                 android:text="Lihat Selengkapnya"
                 android:textColor="@color/myprimarycolor"
                 android:textSize="15sp" />
@@ -192,7 +203,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:fontFamily="@font/msemibold"
+                android:fontFamily="@font/mmedium"
                 android:text="Lihat Selengkapnya"
                 android:textColor="@color/myprimarycolor"
                 android:textSize="15sp" />
