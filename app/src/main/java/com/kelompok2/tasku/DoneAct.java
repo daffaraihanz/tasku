@@ -8,37 +8,40 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class TaskAct extends AppCompatActivity {
+public class DoneAct extends AppCompatActivity {
 
+    TextView tab_todo;
     TextView tab_in_progress;
-    TextView tab_done;
     ImageView btn_back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         overridePendingTransition(R.anim.tab_first, R.anim.tab_second);
-        setContentView(R.layout.activity_task);
+        setContentView(R.layout.activity_done);
 
-        tab_done = findViewById(R.id.tab_done);
+        tab_todo = findViewById(R.id.tab_todo);
         tab_in_progress = findViewById(R.id.tab_in_progress);
         btn_back = findViewById(R.id.btn_back);
 
-        tab_in_progress.setOnClickListener(v -> {
-            Intent toTodo = new Intent(TaskAct.this, InProgressAct.class);
+        tab_todo.setOnClickListener(v -> {
+            Intent toTodo = new Intent(DoneAct.this, TaskAct.class);
             startActivity(toTodo);
             finish();
         });
 
-        tab_done.setOnClickListener(v -> {
-            Intent toDone = new Intent(TaskAct.this, DoneAct.class);
-            startActivity(toDone);
+        tab_in_progress.setOnClickListener(v -> {
+            Intent toProgress = new Intent(DoneAct.this, InProgressAct.class);
+            startActivity(toProgress);
             finish();
         });
 
-        btn_back.setOnClickListener(view -> {
-            Intent toHome = new Intent(TaskAct.this, HomeAct.class);
-            startActivity(toHome);
+        btn_back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent toHome = new Intent(DoneAct.this, HomeAct.class);
+                startActivity(toHome);
+            }
         });
     }
 }

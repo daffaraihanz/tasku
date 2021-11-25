@@ -16,6 +16,7 @@ public class LoginAct extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        overridePendingTransition(R.anim.splash_first, R.anim.splash_second);
         setContentView(R.layout.activity_login);
 
         button_masuk = findViewById(R.id.button_masuk);

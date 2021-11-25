@@ -10,11 +10,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Tasku">
         <activity
+            android:name=".ProfileAct"
+            android:exported="false" />
+        <activity
+            android:name=".DetailCardAct"
+            android:exported="false" />
+        <activity
+            android:name=".DoneAct"
+            android:exported="false" />
+        <activity
             android:name=".RegisterSuccessAct"
             android:exported="false" />
         <activity
             android:name=".RegisterAct"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".InProgressAct"
             android:exported="false" />

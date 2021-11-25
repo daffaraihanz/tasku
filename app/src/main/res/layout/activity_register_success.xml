@@ -22,9 +22,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
         android:fontFamily="@font/mbold"
-        android:text="Horeee ! Registrasimu berhasil"
+        android:text="Yay ! Registrasimu berhasil"
         android:textColor="@color/black"
-        android:textSize="20sp"
+        android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
@@ -62,32 +62,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="20dp"
-        android:fontFamily="@font/mregular"
-        android:text="Tugasku mau ajakin kamu"
-        android:textSize="15sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.182"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_masuk" />
 
-    <TextView
-        android:id="@+id/button_kenalan"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="20dp"
-        android:fontFamily="@font/mbold"
-        android:text="kenalan"
-        android:textColor="@color/myprimarycolor"
-        android:textSize="15sp"
-        app:layout_constraintStart_toEndOf="@+id/textView3"
-        app:layout_constraintTop_toBottomOf="@id/button_masuk"
-        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
