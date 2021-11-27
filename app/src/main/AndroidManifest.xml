@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Tasku">
         <activity
+            android:name=".TaskAddAct"
+            android:exported="false" />
+        <activity
             android:name=".ProfileAct"
             android:exported="false" />
         <activity
