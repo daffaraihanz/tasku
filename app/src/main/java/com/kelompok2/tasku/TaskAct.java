@@ -15,8 +15,9 @@ public class TaskAct extends AppCompatActivity {
 
     TextView tab_in_progress;
     TextView tab_done;
-    ImageView btn_back;
+    ImageView btn_back, nav_home, nav_task, nav_daily, nav_profile;;
     FloatingActionButton fb_add_task;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +29,10 @@ public class TaskAct extends AppCompatActivity {
         tab_in_progress = findViewById(R.id.tab_in_progress);
         btn_back = findViewById(R.id.btn_back);
         fb_add_task = findViewById(R.id.fb_add_task);
+        nav_home = findViewById(R.id.nav_home);
+        nav_task = findViewById(R.id.nav_task);
+        nav_daily = findViewById(R.id.nav_daily);
+        nav_profile = findViewById(R.id.nav_profile);
 
         tab_in_progress.setOnClickListener(v -> {
             Intent toTodo = new Intent(TaskAct.this, InProgressAct.class);
@@ -50,5 +55,25 @@ public class TaskAct extends AppCompatActivity {
             Intent toAddTask = new Intent(TaskAct.this, TaskAddAct.class);
             startActivity(toAddTask);
         });
+    }
+
+    public void openHome(View view){
+        Intent toHome = new Intent(TaskAct.this, HomeAct.class);
+        startActivity(toHome);
+    }
+
+    public void openTask(View view){
+        Intent toTask = new Intent(TaskAct.this, TaskAct.class);
+        startActivity(toTask);
+    }
+
+    public void openDaily(View view){
+        Intent toDaily = new Intent(TaskAct.this, DailyAct.class);
+        startActivity(toDaily);
+    }
+
+    public void openProfile(View view){
+        Intent toProfile = new Intent(TaskAct.this, ProfileAct.class);
+        startActivity(toProfile);
     }
 }

@@ -321,9 +321,55 @@
         android:layout_height="wrap_content"
         android:layout_gravity="end|bottom"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="96dp"
         android:src="@drawable/ic_add"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:background="@color/white"
+        android:weightSum="4"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <ImageView
+            android:id="@+id/nav_home"
+            android:layout_weight="1"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_home"
+            android:onClick="openHome"/>
+
+        <ImageView
+            android:id="@+id/nav_task"
+            android:layout_weight="1"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_task"
+            android:onClick="openTask"/>
+
+        <ImageView
+            android:id="@+id/nav_daily"
+            android:layout_weight="1"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_calendar"
+            android:onClick="openDayli"/>
+
+        <ImageView
+            android:id="@+id/nav_profile"
+            android:layout_weight="1"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_user"
+            android:onClick="openProfile"/>
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,4 +4,8 @@
     <string name="menu_home">Home</string>
     <string name="menu_task">Task</string>
     <string name="menu_daily">Daily</string>
+    <string name="nama">Daffa Raihan Zaki</string>
+    <string name="username">rz</string>
+    <string name="password">12345678</string>
+    <string name="bio">Mahasiswa SE</string>
 </resources>
