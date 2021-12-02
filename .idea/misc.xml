@@ -21,15 +21,18 @@
         <entry key="..\:/2021/AS/tasku/app/src/main/res/layout/activity_splash_screen.xml" value="0.264" />
         <entry key="..\:/2021/AS/tasku/app/src/main/res/layout/activity_task.xml" value="0.264" />
         <entry key="..\:/2021/AS/tasku/app/src/main/res/layout/activity_testing.xml" value="0.25416666666666665" />
+        <entry key="..\:/pj/tasku/app/src/main/res/drawable/bg_btn_hapus.xml" value="0.21614583333333334" />
         <entry key="..\:/pj/tasku/app/src/main/res/drawable/bg_card_home.xml" value="0.21614583333333334" />
         <entry key="..\:/pj/tasku/app/src/main/res/drawable/bg_circle_pict.xml" value="0.21614583333333334" />
         <entry key="..\:/pj/tasku/app/src/main/res/drawable/bg_input.xml" value="0.21614583333333334" />
         <entry key="..\:/pj/tasku/app/src/main/res/drawable/bg_input_dua.xml" value="0.21614583333333334" />
         <entry key="..\:/pj/tasku/app/src/main/res/drawable/bg_input_edit.xml" value="0.21614583333333334" />
         <entry key="..\:/pj/tasku/app/src/main/res/drawable/bg_input_satu.xml" value="0.21614583333333334" />
+        <entry key="..\:/pj/tasku/app/src/main/res/drawable/bg_linestroke.xml" value="0.10989583333333333" />
         <entry key="..\:/pj/tasku/app/src/main/res/drawable/bg_tab_home.xml" value="0.21614583333333334" />
         <entry key="..\:/pj/tasku/app/src/main/res/drawable/bg_tab_home_disable.xml" value="0.21614583333333334" />
         <entry key="..\:/pj/tasku/app/src/main/res/font/font.xml" value="0.23020833333333332" />
+        <entry key="..\:/pj/tasku/app/src/main/res/layout/activity_add_subtask.xml" value="0.17074275362318841" />
         <entry key="..\:/pj/tasku/app/src/main/res/layout/activity_daily.xml" value="0.17980072463768115" />
         <entry key="..\:/pj/tasku/app/src/main/res/layout/activity_detail_card.xml" value="0.12318840579710146" />
         <entry key="..\:/pj/tasku/app/src/main/res/layout/activity_done.xml" value="0.22" />
@@ -41,7 +44,7 @@
         <entry key="..\:/pj/tasku/app/src/main/res/layout/activity_register.xml" value="0.18" />
         <entry key="..\:/pj/tasku/app/src/main/res/layout/activity_splash_screen.xml" value="0.25" />
         <entry key="..\:/pj/tasku/app/src/main/res/layout/activity_task.xml" value="0.21" />
-        <entry key="..\:/pj/tasku/app/src/main/res/layout/activity_task_add.xml" value="0.25" />
+        <entry key="..\:/pj/tasku/app/src/main/res/layout/activity_task_add.xml" value="0.36666666666666664" />
         <entry key="..\:/pj/tasku/app/src/main/res/menu/menu.xml" value="0.1935185185185185" />
         <entry key="..\:/pj/tasku/app/src/main/res/menu/popup_menu.xml" value="0.2" />
       </map>

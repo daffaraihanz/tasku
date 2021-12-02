@@ -10,7 +10,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CalendarView;
+import android.widget.CheckBox;
 import android.widget.DatePicker;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -18,16 +20,17 @@ import android.widget.TimePicker;
 
 import java.text.DateFormat;
 import java.util.Calendar;
+import java.util.List;
 import java.util.Locale;
 
 public class TaskAddAct extends AppCompatActivity {
 
     ImageView btn_back;
     private DatePickerDialog datePickerDialog;
-    LinearLayout btn_time, btn_datepick;
+    LinearLayout btn_time, btn_datepick, list_subtask, btn_add_subtask;
+
     private TextView txttime, txtdate;
     int h, m;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,11 +43,41 @@ public class TaskAddAct extends AppCompatActivity {
         btn_time = findViewById(R.id.btn_time);
         txttime = findViewById(R.id.txttime);
         txtdate = findViewById(R.id.txtdate);
+        list_subtask = findViewById(R.id.list_subtask);
+        btn_add_subtask = findViewById(R.id.btn_add_subtask);
+
 
         btn_back.setOnClickListener(v -> {
             Intent backtoTask = new Intent(TaskAddAct.this, TaskAct.class);
             startActivity(backtoTask);
         });
+
+        btn_add_subtask.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                addSubtaskView();
+            }
+        });
+    }
+
+    private void addSubtaskView() {
+        View subtask = getLayoutInflater().inflate(R.layout.activity_task_add_subtask, null, false);
+        CheckBox flag = (CheckBox)subtask.findViewById(R.id.flag);
+        EditText subtask_desc = (EditText)subtask.findViewById(R.id.subtask_desc);
+        ImageView subtask_del = (ImageView)subtask.findViewById(R.id.btn_del_subtask);
+
+        subtask_del.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                removeSubtaskView(subtask);
+            }
+        });
+
+        list_subtask.addView(subtask);
+    }
+
+    private void removeSubtaskView(View v){
+        list_subtask.removeView(v);
     }
 
 //    private String getTodaysDate() {

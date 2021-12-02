@@ -18,7 +18,7 @@ import android.widget.Toast;
 
 public class ProfileAct extends AppCompatActivity implements PopupMenu.OnMenuItemClickListener {
 
-    ImageView nav_home, nav_task, nav_daily, nav_profile, btn_settings;
+    ImageView nav_home, nav_task, nav_daily, nav_profile;
 
 
     @SuppressLint("RestrictedApi")
@@ -30,19 +30,19 @@ public class ProfileAct extends AppCompatActivity implements PopupMenu.OnMenuIte
         nav_task = findViewById(R.id.nav_task);
         nav_daily = findViewById(R.id.nav_daily);
         nav_profile = findViewById(R.id.nav_profile);
-        btn_settings = findViewById(R.id.btn_settings);
-
 
     }
 
 /*Pop Up Settings*/
-    public void settingsPopUp(View view){
+    public void popUpSet(View view){
         PopupMenu popup = new PopupMenu(this, view);
         popup.setOnMenuItemClickListener(this);
         popup.inflate(R.menu.popup_menu);
         popup.show();
     }
 
+
+    //show popup
     @SuppressLint("NonConstantResourceId")
     @Override
     public boolean onMenuItemClick(MenuItem item) {
