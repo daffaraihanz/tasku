@@ -36,6 +36,7 @@ public class LoginAct extends AppCompatActivity {
             public void onClick(View view) {
                 Intent toRegister = new Intent(LoginAct.this, RegisterAct.class);
                 startActivity(toRegister);
+                finish();
             }
         });
     }

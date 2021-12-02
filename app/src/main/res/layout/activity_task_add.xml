@@ -46,102 +46,150 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/view"
+        android:layout_marginBottom="12dp"
         >
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingStart="20dp"
+            android:paddingStart="16dp"
             android:paddingTop="20dp"
             android:paddingEnd="20dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
+            android:paddingBottom="20dp"
             android:orientation="vertical"
             >
+            <EditText
+                android:id="@+id/Tittle"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="Judul Tugas"
+                android:fontFamily="@font/mregular"
+                android:textSize="14dp"
+                android:paddingLeft="16dp"
+                android:background="@drawable/bg_input"
+                android:layout_marginBottom="20dp"
+                />
+            <EditText
+                android:id="@+id/Desc"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:hint="Deskripsi Tugas"
+                android:fontFamily="@font/mregular"
+                android:textSize="14dp"
+                android:paddingLeft="16dp"
+                android:background="@drawable/bg_input"
+                android:layout_marginBottom="20dp"
+                />
+
+            <!--Tanggal Deadline-->
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingStart="16dp"
-                android:paddingTop="20dp"
-                android:paddingEnd="20dp"
-                android:paddingBottom="20dp"
-                android:orientation="vertical"
-                android:background="@drawable/bg_card_task"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:background="@drawable/bg_input"
+                android:layout_marginBottom="20dp"
+                android:onClick="openDatePicker"
+                android:id="@+id/btn_datepick"
                 >
 
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:background="@drawable/bg_input"
-                    android:hint="Judul Task"
-                    android:inputType="text"
-                    android:paddingLeft="15dp"
-                    android:layout_marginBottom="20dp"
+                <TextView
+                    android:id="@+id/txtdate"
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:paddingLeft="16dp"
+                    android:fontFamily="@font/mregular"
+                    android:layout_marginRight="12dp"
+                    android:hint="Due Date"
+                    android:gravity="center_vertical"
                     />
 
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_calendar" />
 
+            </LinearLayout>
+
+            <!--Jam Deadline-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:background="@drawable/bg_input"
+                android:layout_marginBottom="20dp"
+                android:onClick="popTimePicker"
+                android:id="@+id/btn_time"
+                >
+                <TextView
+                    android:id="@+id/txttime"
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:paddingLeft="16dp"
+                    android:fontFamily="@font/mregular"
+                    android:layout_marginRight="12dp"
+                    android:hint="Time Up"
+                    android:gravity="center_vertical"
+                    />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_clock" />
+            </LinearLayout>
+
+            <!--List Sub Task-->
+            <LinearLayout
+                android:id="@+id/list_subtask"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                ></LinearLayout>
+
+            <!--Button Add Sub Task-->
+            <LinearLayout
+                android:id="@+id/btn_add_subtask"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_add"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="16dp"
+                    />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Dedline"
-                    android:fontFamily="@font/mmedium"
-                    android:textSize="20sp"
-                    android:layout_marginBottom="12dp"/>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal"
-                    android:layout_marginBottom="20dp"
-                    android:id="@+id/btn_datepick"
-                    android:onClick="openDatePicker"
-                    >
-
-                    <ImageView
-                        android:layout_width="25dp"
-                        android:layout_height="25dp"
-                        android:src="@drawable/ic_calendar"
-                        android:layout_marginRight="12dp"/>
-
-                    <TextView
-                        android:id="@+id/txtdate"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:textSize="12sp"
-                        android:textColor="@color/black"
-                        android:background="@drawable/bg_input"
-                        />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/btn_time"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal"
-                    android:onClick="popTimePicker"
-                    >
-                    <ImageView
-                        android:layout_width="25dp"
-                        android:layout_height="25dp"
-                        android:src="@drawable/ic_clock"
-                        android:layout_marginRight="12dp"/>
-
-                    <TextView
-                        android:id="@+id/txttime"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:textSize="12sp"
-                        android:textColor="@color/black"
-                        android:background="@drawable/bg_input"
-                        />
-
-                </LinearLayout>
-
+                    android:text="Tambah Sub Task"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:paddingLeft="16dp"
+                    android:fontFamily="@font/mregular"
+                    android:layout_marginRight="12dp"
+                    android:layout_gravity="center_vertical"
+                    />
             </LinearLayout>
 
+            <Button
+                android:id="@+id/btn_simpan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Simpan"
+                android:background="@drawable/bg_button"
+                android:fontFamily="@font/mbold"
+                android:textSize="18sp"
+                android:textAllCaps="false"
+                />
         </LinearLayout>
 
     </ScrollView>

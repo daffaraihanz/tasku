@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    >
+
+    <CheckBox
+        android:id="@+id/flag"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        />
+
+    <EditText
+        android:id="@+id/subtask_desc"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:hint="Sub Task"
+        android:fontFamily="@font/mregular"
+        android:textSize="14dp"
+        android:paddingLeft="16dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/bg_input"
+        android:layout_weight="1"
+        />
+
+    <LinearLayout
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@drawable/bg_btn_hapus"
+        android:layout_marginLeft="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/btn_del_subtask"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_delete"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
